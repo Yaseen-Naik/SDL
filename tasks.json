@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "build",
+          "type": "shell",
+          "command": "gcc",
+          "args": [
+              "-I", "C:/SdlUsingC/include",    // Adjust include path
+              "-L", "C:/SdlUsingC/lib",        // Adjust library path
+              "main.c",
+              "-lmingw32",
+              "-lSDL2main",
+              "-lSDL2",
+              "-o",
+              "main"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": ["$gcc"],
+          "detail": "Generated task by GCC"
+      }
+  ]
+}
